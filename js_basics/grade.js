@@ -1,3 +1,7 @@
+// Write a script `grade.js` that takes a number as argument that must be between 0 and 100. 
+// If the number is smaller or larger, log "Invalid grade". Otherwise, calculate their letter grade 
+// from "F" to "A" then log it. Try using BC's letter grading system (it's short).
+
 const a = parseInt(process.argv[2])
 
 if (a>=0 && a<=100) {

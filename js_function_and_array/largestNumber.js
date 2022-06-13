@@ -1,3 +1,5 @@
+//Write a function called `largestNumber` that returns the largest number from an array of numbers.
+
 function largestNumber (arr){
     let defauNum = -Infinity
     arr.forEach((ele)=>{

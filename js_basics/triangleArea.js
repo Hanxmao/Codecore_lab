@@ -1,3 +1,8 @@
+/*
+Write a script `triangleArea.js` that takes 3 number arguments, each representing the length of a side. 
+Then, calculate and log the perimeter and area of the triangle. 
+If given lengths do not create a valid triangle, log "Impossible triangle!" instead.
+*/
 const a = parseInt(process.argv[2])
 const b = parseInt(process.argv[3])
 const c = parseInt(process.argv[4])

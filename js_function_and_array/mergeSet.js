@@ -1,3 +1,5 @@
+//Write a function, mergeSet, that merges two arrays and removes all duplicate elements.
+
 function mergeSet(arr1,arr2){
     newArr=arr1.concat(arr2)
     newArr.sort()

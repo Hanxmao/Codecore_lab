@@ -1,22 +1,7 @@
-// //version 1.0 not work cuz 4th result is true
-// function isHomogenous( arr ) {
-//   let defau= typeof arr[0]
-//   for (let i= 1;i<=arr.length;i++){
-//     if (typeof arr[i] !== defau){
-//       return false
-//     } else {
-//       return true
-//     }
-//   }
-// }
+// Write a function, isHomogenous, that takes an array and 
+// returns true only if all its values are of the same type
+//  (e.g. all the values are strings or all the values are numbers, etc).
 
-
-
-// //google way how ever the 4th result is true have no diea why
-// function isHomogenous( arr ) {
-//     return new Set( arr.map( x => typeof x ) ).size <= 1;
-//   }
- 
 //answer from tutor
 function isHomogenous(arr) {
   let previousType; // type of the last iteration

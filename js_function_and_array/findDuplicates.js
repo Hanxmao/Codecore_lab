@@ -1,3 +1,6 @@
+// Write a function, findDuplicates, that takes an array of strings 
+// and/or integers, values. Return a new array containing all the values that are duplicated in the array.
+
 function findDuplicates(arr){
     let dupArr=[]
     arr.sort()

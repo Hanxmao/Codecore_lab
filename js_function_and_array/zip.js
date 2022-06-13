@@ -1,3 +1,7 @@
+// Write a function, zip, that takes two arrays of the same length, arrA & arrB. 
+// If arrA and arrB are not the same length, the function should return undefined. 
+// Otherwise, it should combine both arrays together in a two-dimensional array:
+
 function zip(a,b){
     if(a.length!==b.length){
         return undefined

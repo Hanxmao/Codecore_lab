@@ -1,3 +1,7 @@
+// Write a script `toggleCase.js` that takes a string as an argument 
+// then logs the string with the casing of each letter reversed.
+//  Lower case becomes upper case and vice versa.
+
 let a = process.argv[2]
 let b = ''
 

@@ -1,3 +1,8 @@
+// Write a script `rollingDice.js` that takes two numbers as arguments. 
+// The first one represents a quantity of dice and the second one represents a number of faces on the dice.
+//  Simulate rolling the dice. Log the result of each dice, 
+// the sum and the average of all rolls.
+
 const a = parseInt(process.argv[2])
 const b = parseInt(process.argv[3])
 

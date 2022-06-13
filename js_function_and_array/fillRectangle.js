@@ -1,3 +1,10 @@
+// Write a function, fillRectangle, that takes 3 arguments: a number representing a width, 
+// another number representing a height and a single character string as chr. 
+// It must return a 2 dimensional array 
+// (i.e. an array containing elements with values that are also of array type, each with the same length.)
+//  The outer array should be of length height, and the inner arrays should each have length width, 
+// where the values of the inner arrays are filled with chr.
+
 function fillRectangle (wid,hei,chr){
     let ori = []
     for (let i=0;i<wid;i++){
@@ -26,6 +33,7 @@ function rectangleToString (arr){
 const str = rectangleToString(fillRectangle(2, 2, "**"))
 console.log(str)
 
+// tutor answer
 // function fillRectangle(width, height, character) {
 //     // if the character parameter is not a string or number exit the function
 //     if ((typeof character !== 'string') && (!typeof character === 'number')) {

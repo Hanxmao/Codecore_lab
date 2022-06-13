@@ -1,3 +1,20 @@
+// Create an object named, StringExtras, that contain several utility methods that re-implement some string library methods. You are not allowed to use the existing methods of the same name to implement these. 
+
+
+// It should have a:
+
+
+// - repeat method that duplicates a string n of times.
+
+// - leftPad method that adds space to the left of a string until the string is of length n.
+
+// - rightPad method like leftPad, but adds spaces to the right of the string.
+
+// - pad method like leftPad, but adds spaces to the left & right of the string.
+
+// - capitalize method which uppercases the first letter of a string.
+
+
 const stringExtras={
     repeat:(str,n)=>{
         let result = ''

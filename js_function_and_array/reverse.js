@@ -1,4 +1,5 @@
-
+// Write a function, 
+// reverse that takes a string and returns another string with the characters in reverse order.
 
 function reverse (words){
     let result = ''

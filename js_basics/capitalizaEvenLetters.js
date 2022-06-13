@@ -1,3 +1,6 @@
+//Write a script `capitalizeEvenLetters.js` that takes a word as an argument. 
+//Upper case every even letter and lower case every odd letter of the word then log it.
+
 let a = process.argv[2];
 let b = ''
 if (a == true){

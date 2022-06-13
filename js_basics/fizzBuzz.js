@@ -1,3 +1,8 @@
+// Write a script `fizzBuzz.js` that takes two numbers, then iterates through the numbers from 1 to 100 
+// logging "fizz" if the current number is divisible by the first number, "buzz" 
+// if the current number is divisible by the second number, "fizzbuzz" 
+// if it's divisible by both, else print the current number.
+
 const a = parseInt(process.argv[2])
 const b = parseInt(process.argv[3])
 
