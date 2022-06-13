@@ -1,16 +1,18 @@
-//Fill Rectangle
-function fillRectangle(width, height, chr) {
-  let arr = chr.repeat(width).split('')
-  let newArr= []
-  for (let i = 0; i < height; i++) {
-      newArr/PushManager(arr)
-  }
+//user input as array
+const input = []
+let i =2
+while (process.argv[i]){
+    input.push(process.argv[i])
+    i++
+} 
 
-  // for (let i = 0; i < height.length; i++) {
-  //     let rectangle = []
-  //     rectangle.push(arr)
-  // }
-  // return rectangle
+//find largest element length of the input array
+let larLength=0
+for (i=0;i<input.length;i++){
+    if(input[i].length>larLength){
+        larLength = input[i].length
+    }
 }
 
-console.log(fillRectangle(5, 3, "*"))
+console.log(input)
+console.log(larLength)  
