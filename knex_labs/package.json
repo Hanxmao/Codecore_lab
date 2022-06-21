@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "knex": "^2.1.0",
+    "pg": "^8.7.3"
+  },
+  "name": "knex_labs",
+  "version": "1.0.0",
+  "main": "knexfile.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hanx",
+  "license": "ISC",
+  "description": ""
+}
