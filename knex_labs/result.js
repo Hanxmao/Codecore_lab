@@ -1,7 +1,7 @@
 const data = require('./target.js')
 
 const tableData = []
-data.map((item, i) => {
+data.map((item) => {
     const lastEntry = tableData[tableData.length - 1];
     if (
         lastEntry &&
@@ -15,9 +15,6 @@ data.map((item, i) => {
             code: item.countryCode,
         });
     }
-}, []);
+},);
 
 module.exports=tableData
-
-
-console.log(tableData)
