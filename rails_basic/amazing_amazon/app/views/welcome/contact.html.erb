@@ -1,0 +1,9 @@
+<%= render 'shared/navbar'%>
+
+<%=form_with url:'/thank_you', method: :get do |form|%>
+<%= form.label :name%>
+<%= form.text_field :name%>
+<%= form.label :email%>
+<%= form.text_field :email%>
+<%= form.submit 'Submit'%>
+<% end %>

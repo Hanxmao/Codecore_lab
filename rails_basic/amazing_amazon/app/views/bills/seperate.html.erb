@@ -1,0 +1,13 @@
+<h2>Seperate your bills</h2>
+
+<%= form_with url:'/bills_result', method: :get do |form|%>
+<%= form.label :amount%>
+<%= form.text_field :amount%>
+<%= form.label :taxes%>
+<%= form.text_field :taxes%>
+<%= form.label :tips%>
+<%= form.text_field :tips%>
+<%= form.label :people%>
+<%= form.text_field :people%>
+<%= form.submit 'Submit'%>
+<% end %>
