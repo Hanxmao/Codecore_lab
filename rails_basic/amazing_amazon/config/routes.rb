@@ -11,4 +11,6 @@ Rails.application.routes.draw do
 
   get '/seperate' => 'bills#seperate'
   get '/bills_result' => 'bills#bills_result'
+
+  resources 'products'
 end
