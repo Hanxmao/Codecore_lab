@@ -12,5 +12,8 @@ Rails.application.routes.draw do
   get '/seperate' => 'bills#seperate'
   get '/bills_result' => 'bills#bills_result'
 
-  resources 'products'
+  resources 'products' do
+    resources 'reviews', only: [:create, :destroy]
+  end
+
 end

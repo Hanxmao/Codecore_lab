@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
 
     before_action :find_product, only: [:show, :update, :edit, :destroy]
 
+
     #===============create=========================   
     def new
         @product = Product.new
@@ -24,7 +25,8 @@ class ProductsController < ApplicationController
     end
 
     def show
-
+        @reviews = @product.reviews.order(created_at: :desc)
+        @review = Review.new
     end
 
     #===============delete==================
