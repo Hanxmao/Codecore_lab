@@ -3,6 +3,7 @@ class ProductsController < ApplicationController
     #===============callback==================
 
     before_action :find_product, only: [:show, :update, :edit, :destroy]
+    before_action :authenticate_user!, except: [:index, :show]
 
 
     #===============create=========================   
@@ -12,6 +13,7 @@ class ProductsController < ApplicationController
 
     def create
         @product = Product.new(params_product)
+        @product.user = current_user
         if @product.save
             redirect_to product_path(@product)
         else

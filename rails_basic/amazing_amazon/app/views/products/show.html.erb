@@ -2,6 +2,7 @@
 <p> <%= @product.description %> </p>
 <p> <%= @product.price %> </p>
 
+<label>Post by: <%= @product.user.first_name %></label>
 <%= link_to 'Edit', edit_product_path(@product)%>
 <%= button_to 'Delete', product_path(@product), method: :delete%>
 
@@ -12,7 +13,7 @@
     <div>
         <h4> <%= review.body %> </h4>
         <p> Rating from customer: <%= review.rating %> </p>
-        <small> Post at <%= time_ago_in_words(review.created_at)%> ago </small>  
+        <small> Post at <%= time_ago_in_words(review.created_at)%> ago, by <%= review.user.first_name%> </small>  
         <%= button_to 'delete', product_review_path(@product, review), method: :delete %> 
     </div>
 <% end %>

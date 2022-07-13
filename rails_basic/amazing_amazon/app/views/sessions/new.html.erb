@@ -1,0 +1,12 @@
+<h1>Sigh in</h1>
+
+<%= form_with url: session_path, local: true do |f| %>
+<div>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <%= f.submit 'Sign in' %>
+</div>
+<% end %>
+
