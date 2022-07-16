@@ -15,8 +15,12 @@ class ReviewsController < ApplicationController
 
     def destroy
         @review = Review.find params[:id]
-        @review.destroy
-        redirect_to product_path(@product)
+        if can?(:crud, @review)
+            @review.destroy
+            redirect_to product_path(@product), notice: 'Review deleted'
+        else
+            redirect_to root_path, alert: 'Not authorized!'
+        end
     end
 
     private

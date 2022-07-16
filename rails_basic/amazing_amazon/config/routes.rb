@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get '/seperate' => 'bills#seperate'
   get '/bills_result' => 'bills#bills_result'
 
-  get '/' => 'products#index'
+  get '/' => 'products#index', as: :root
   resources 'products' do
     resources :reviews, only: [:create, :destroy]
   end

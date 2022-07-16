@@ -3,8 +3,11 @@
 <p> <%= @product.price %> </p>
 
 <label>Post by: <%= @product.user.first_name %></label>
-<%= link_to 'Edit', edit_product_path(@product)%>
-<%= button_to 'Delete', product_path(@product), method: :delete%>
+
+<% if can?(:crud, @product)%>
+    <%= link_to 'Edit', edit_product_path(@product)%>
+    <%= button_to 'Delete', product_path(@product), method: :delete%>
+<% end %>
 
 <h3>Reviews</h3>
 <hr>
@@ -14,7 +17,9 @@
         <h4> <%= review.body %> </h4>
         <p> Rating from customer: <%= review.rating %> </p>
         <small> Post at <%= time_ago_in_words(review.created_at)%> ago, by <%= review.user.first_name%> </small>  
+        <% if can?(:crud, review) %>
         <%= button_to 'delete', product_review_path(@product, review), method: :delete %> 
+        <% end %>
     </div>
 <% end %>
 
